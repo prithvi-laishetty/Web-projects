@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Arena</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <style>
+        /* CSS reset */
+        body {
+            font-family: 'Baloo Tamma 2', cursive;
+            color: antiquewhite;
+            margin: 0px;
+            padding: 0px;
+            background: url(img/man-ga854a785a_1920.jpg);
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 53px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 130px;
+            padding: 0px 41px;
+            /* invert function changes the color of an image (black into white and vicer-versa) */
+            /* filter: invert(100%); */
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 19px;
+            font-size: 22px;
+            color: aqua;
+        }
+
+        .mid {
+            display: block;
+            width: 41%;
+            margin: 20px auto;
+            /* border: 3px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 33px;
+            top: 20px;
+            /* border: 3px solid yellow; */
+            display: inline-block;
+
+        }
+
+        
+
+        .navbar li {
+            display: inline-block;
+            font-size: 24px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 29px 14px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: lightgreen;
+        }
+
+        .btn {
+            font-family: 'Baloo Tamma 2', cursive;
+            margin: 9px 6px;
+            background-color: cyan;
+            color: darkblue;
+            padding: 6px 9px;
+            border: 2px solid darkgoldenrod;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: yellowgreen;
+        }
+
+        .container {
+            /* border: 2px solid lightgreen; */
+            margin: 111px 91px;
+            padding: 54px 46px;
+            width: 33%;
+            border-radius: 34px;
+        }
+
+        .form-group input { 
+            text-align: center;
+            border: 2px solid black;
+            width: 288px;
+            padding: 3px 79px;
+            margin: 4px 52px;
+            font-size: 24px;
+            border-radius: 15px;
+            display: block;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+        }
+        .container h1{
+            text-align: center;
+            width: 564px;
+            margin: 2px 11;
+        }
+        .container button{
+            text-align: center;
+            display: block;
+            width: 30%;
+            margin: 10px 168px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/img.jpg" alt="">
+            <div>Prithvi's Fitness Arena</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Routine</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Fitness Tips</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Fitness Arena</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" class="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" class="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" class="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" class="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" class="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" class="" placeholder="Enter your Phone No.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
